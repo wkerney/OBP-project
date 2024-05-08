@@ -1,1 +1,2 @@
-# OBP-project
+## OBP Project
+This project focuses on  designing, building, and evaluating a model to predict a player's on-base percentage (OBP) based on other performance indicators. The MLB Hitting and Pitching stats dataset contains individual statistics for Major League Baseball players. It includes various performance metrics, such as batting averages, on-base percentages, slugging percentages, home runs, RBIs, strikeouts, walks, and more. I then train a tuned model using caret and compare the models.
