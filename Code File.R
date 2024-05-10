@@ -33,7 +33,7 @@ mlb_features <- mlb_data %>%
          BABIP = (hits - home_run) / (at_bat - strikeouts - home_run)) %>%
 select(player_name, position, on_base_percentage, ISO, BABIP, slugging_percentage, runs, run_batted_in, strikeouts, a_walk, home_run, on_base_plus_slugging)
 
-# Remove rows with NA values
+# Remove rows with NA values and converting column names
 mlb_features <- mlb_features[complete.cases(mlb_features), ]
 colnames(mlb_features)[c (3,6,7,8,9,10,11,12)] <- c("OBP", "SLG", "R", "RBI", "K", "BB", "HR", "OPS")
 
